@@ -1,0 +1,110 @@
+/*****************************************
+   Global Styles
+******************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: yellow;
+}
+
+h1 {
+    font-size: 2em;
+    color: blue;
+}
+
+
+/*****************************************
+   Header
+******************************************/
+
+header {
+    text-align: center;
+    color: black;
+    height: 125px;
+    text-align: center;
+}
+
+
+
+/********************
+    Image
+*********************/
+header img {
+    float: left;
+}
+
+/*****************************************
+    Navigation
+******************************************/
+
+nav {
+    background-color: black;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+/*****************************************
+   Content
+******************************************/
+
+/********************
+    Main Section
+*********************/
+section article {
+    float: right;
+    padding: 20px;
+    width: 70%;
+    height: 300px;
+    border-left: 1px dotted gray;
+}
+
+/********************
+    Side Bar
+*********************/
+
+section aside {
+    float: left;
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*****************************************
+   Footer
+******************************************/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 36px;
+    padding-top: 2px;
+}
