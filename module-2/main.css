@@ -1,0 +1,189 @@
+/*****************************************
+   CSS Reset
+******************************************/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+
+}
+
+
+/*****************************************
+   Global Styles
+******************************************/
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    color: purple;
+}
+
+h2 {
+    font-size: 1.25em;
+    padding-bottom: 5px;
+}
+
+
+/*****************************************
+   Header
+******************************************/
+
+header {
+    text-align: center;
+    height: 125px;
+    position: relative;
+    border-bottom: 2px solid lightgrey;
+
+}
+
+header img {
+    float: left;
+}
+
+
+header.container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/*****************************************
+    Navigation
+******************************************/
+
+nav {
+    background-color: black;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+/*****************************************
+   Content
+******************************************/
+
+/********************
+    Main Section
+*********************/
+section main {
+    float: right;
+    padding: 20px;
+    width: 70%;
+    height: 300px;
+    border-left: 1px dotted gray;
+}
+
+/********************
+    Table
+*********************/
+section main table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+section main th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+section main th {
+    background-color: purple;
+    color: white;
+}
+
+/********************
+    Side Bar
+*********************/
+
+section aside {
+    float: left;
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+}
+
+/********************
+    Form
+*********************/
+
+section aside button {
+    background-color: purple;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+section aside button:hover {
+    opacity: 0.8;
+}
+
+section aside .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: purple;
+}
+
+section aside .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+section aside img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+section aside .container {
+    padding: 16px;
+}
+
+section asidespan.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*****************************************
+   Footer
+******************************************/
+
+footer {
+    background-color: purple;
+    color: white;
+    padding-top: 12px;
+    text-align: center;
+    height: 36px;
+}
