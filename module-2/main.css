@@ -24,8 +24,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.25em;
-    padding-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: purple;
+    color: white;
+    text-align: center;
 }
 
 
@@ -54,30 +57,6 @@ header.container h1 {
     transform: translate(-50%, -50%)
 }
 
-/*****************************************
-    Navigation
-******************************************/
-
-nav {
-    background-color: black;
-    list-style: none;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-}
-
-nav a {
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-}
-
-nav a:hover {
-    color: yellow;
-}
 
 
 /*****************************************
@@ -121,7 +100,6 @@ section main th {
 section aside {
     float: left;
     width: 30%;
-    height: 300px;
     padding: 20px;
 }
 
@@ -129,44 +107,114 @@ section aside {
     Form
 *********************/
 
-section aside button {
-    background-color: purple;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
 
-section aside button:hover {
-    opacity: 0.8;
-}
-
-section aside .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: purple;
-}
-
-section aside .imgcontainer {
+section aside .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
     text-align: center;
-    margin: 24px 0 12px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-section aside img.avatar {
-    width: 40%;
-    border-radius: 50%;
+section aside .form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+section aside .form textarea {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+section aside .form button {
+
+    text-transform: uppercase;
+    outline: 0;
+    background: purple;
+    width: 45%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+section aside .form button:hover,
+.form button:active,
+.form button:focus {
+    background: #43A047;
+}
+
+section aside .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+section aside .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+section aside .form .register-form {
+    display: none;
 }
 
 section aside .container {
-    padding: 16px;
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-section asidespan.psw {
-    float: right;
-    padding-top: 16px;
+section aside .container:before,
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
 }
+
+section aside .container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+
+section aside .container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+
+section aside .container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+
+section aside .container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+
+section aside .container .info span .fa {
+    color: #EF3B3A;
+}
+
 
 
 /* Clear floats after the columns */
