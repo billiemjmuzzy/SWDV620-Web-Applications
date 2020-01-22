@@ -56,7 +56,7 @@ header.container h1 {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    tranform: translate(-50%, -50%)
 }
 
 
@@ -105,11 +105,11 @@ section aside {
 }
 
 /********************
-    Form
+form
 *********************/
 
 
-section aside .form {
+section aside form {
     position: relative;
     z-index: 1;
     max-width: 500px;
@@ -119,7 +119,7 @@ section aside .form {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.22);
 }
 
-section aside .form input,
+section aside form input,
 textarea {
     outline: 0;
     background: #f2f2f2;
@@ -132,7 +132,7 @@ textarea {
 }
 
 
-section aside .form button {
+section aside form button {
     text-transform: uppercase;
     outline: 0;
     background: purple;
@@ -143,12 +143,16 @@ section aside .form button {
     cursor: pointer;
 }
 
-section aside .form button:hover,
-.form button:active,
-.form button:focus {
+section aside form button:hover,
+form button:active,
+form button:focus {
     background: midnightblue;
 }
 
+section aside form legend {
+    color: purple;
+    font-size: 2em;
+}
 
 section aside .container {
     position: relative;
