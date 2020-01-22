@@ -14,7 +14,9 @@
    Global Styles
 ******************************************/
 
-body {
+body,
+textarea,
+input {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
@@ -69,7 +71,7 @@ header.container h1 {
 section main {
     float: right;
     padding: 20px;
-    width: 70%;
+    width: 60%;
 
 }
 
@@ -98,7 +100,7 @@ section main th {
 
 section aside {
     float: left;
-    width: 30%;
+    width: 40%;
     padding: 20px;
 }
 
@@ -110,7 +112,7 @@ section aside {
 section aside .form {
     position: relative;
     z-index: 1;
-    max-width: 360px;
+    max-width: 500px;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
@@ -128,6 +130,7 @@ textarea {
     box-sizing: border-box;
 
 }
+
 
 section aside .form button {
     text-transform: uppercase;
@@ -169,8 +172,8 @@ section:after {
     clear: both;
 }
 
-/* Responsive layout for screens 600px wide, stacks columns */
-@media screen and (max-width: 600px) {
+/* Responsive layout for screens 768px wide, stacks columns */
+@media screen and (max-width: 768px) {
 
     section main,
     section aside {
