@@ -161,11 +161,6 @@ section aside .container:before,
     clear: both;
 }
 
-section aside .container .info {
-    margin: 50px auto;
-    text-align: center;
-}
-
 
 /* Clear floats after the columns */
 section:after {
@@ -174,7 +169,7 @@ section:after {
     clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout for screens 600px wide, stacks columns */
 @media screen and (max-width: 600px) {
 
     section main,
