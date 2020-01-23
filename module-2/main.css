@@ -2,13 +2,11 @@
    CSS Reset
 ******************************************/
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-size: 1em;
-
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 1em;
 }
-
 
 /*****************************************
    Global Styles
@@ -17,7 +15,7 @@
 body,
 textarea,
 input {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 /* header.container h1 {
@@ -26,42 +24,37 @@ input {
 } */
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    background-color: purple;
-    color: white;
-    text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+  background-color: purple;
+  color: white;
+  text-align: center;
 }
-
 
 /*****************************************
    Header
 ******************************************/
 
 header {
-    text-align: center;
-    height: 125px;
-    position: relative;
-    border-bottom: 2px solid lightgrey;
-
+  text-align: center;
+  height: 125px;
+  position: relative;
+  border-bottom: 2px solid lightgrey;
 }
 
 header img {
-    float: left;
+  float: left;
 }
-
 
 header.container h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    color: purple;
-    font-size: 3em;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  color: purple;
+  font-size: 3em;
+  transform: translate(-50%, -50%);
 }
-
-
 
 /*****************************************
    Content
@@ -71,29 +64,28 @@ header.container h1 {
     Main Section
 *********************/
 section main {
-    float: right;
-    padding: 20px;
-    width: 60%;
-
+  float: right;
+  padding: 20px;
+  width: 60%;
 }
 
 /********************
     Table
 *********************/
 section main table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 section main th,
 td {
-    text-align: left;
-    padding: 8px;
+  text-align: left;
+  padding: 8px;
 }
 
 section main th {
-    background-color: purple;
-    color: white;
+  background-color: purple;
+  color: white;
 }
 
 /********************
@@ -101,91 +93,85 @@ section main th {
 *********************/
 
 section aside {
-    float: left;
-    width: 40%;
-    padding: 20px;
+  float: left;
+  width: 40%;
+  padding: 20px;
 }
 
 /********************
 form
 *********************/
 
-
 section aside form {
-    position: relative;
-    z-index: 1;
-    max-width: 500px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.22);
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.22);
 }
 
 section aside form input,
 textarea {
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-
 section aside form button {
-    text-transform: uppercase;
-    outline: 0;
-    background: purple;
-    width: 45%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    cursor: pointer;
+  text-transform: uppercase;
+  outline: 0;
+  background: purple;
+  width: 45%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 section aside form button:hover,
 form button:active,
 form button:focus {
-    background: midnightblue;
+  background: midnightblue;
 }
 
 section aside form legend {
-    color: purple;
-    font-size: 2em;
+  color: purple;
+  font-size: 2em;
 }
 
 section aside .container {
-    position: relative;
-    z-index: 1;
-    max-width: 300px;
-    margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 section aside .container:before,
 .container:after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
-
 
 /* Clear floats after the columns */
 section:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Responsive layout for screens 768px wide, stacks columns */
 @media screen and (max-width: 768px) {
-
-    section main,
-    section aside {
-        width: 100%;
-    }
-
+  section main,
+  section aside {
+    width: 100%;
+  }
 }
 
 /*****************************************
@@ -193,9 +179,9 @@ section:after {
 ******************************************/
 
 footer {
-    background-color: purple;
-    color: white;
-    padding-top: 1em;
-    text-align: center;
-    height: 3em;
+  background-color: purple;
+  color: white;
+  padding-top: 1em;
+  text-align: center;
+  height: 3em;
 }

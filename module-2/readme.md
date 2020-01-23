@@ -20,3 +20,7 @@ Create a webpage about your favorite book to include the following:
   - Comment box
   - Submit button: submits the form
   - Clear button: clears the form
+
+## Screenshot of Project
+
+![Screenshot](favorite-books.png)
