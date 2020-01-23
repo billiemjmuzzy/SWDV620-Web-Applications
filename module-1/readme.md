@@ -14,3 +14,7 @@
 ## Wireframe
 
 ![wireframe](billie-wireframe.jpg)
+
+## Screenshot of Project
+
+![Screenshot](cute-animals.png)
