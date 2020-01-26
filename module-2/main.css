@@ -18,10 +18,6 @@ input {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-/* header.container h1 {
-    font-size: 6vw;
-    color: purple;
-} */
 
 h2 {
   font-size: 2em;
@@ -168,6 +164,7 @@ section:after {
 
 /* Responsive layout for screens 768px wide, stacks columns */
 @media screen and (max-width: 768px) {
+
   section main,
   section aside {
     width: 100%;
