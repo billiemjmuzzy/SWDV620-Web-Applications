@@ -10,16 +10,16 @@
 
 ### Page
 
-![Screenshot](fun-with-js.jpg)
+![Screenshot](img/fun-with-js.jpg)
 
 ### 1. Username and Password Prompt
 
-![Screenshot](javascript-prompt.jpg)
+![Screenshot](img/javascript-prompt.jpg)
 
 ### 2. List of Objects
 
-![Screenshot](objects.jpg)
+![Screenshot](img/objects.jpg)
 
 ### 3. JavaScript Event
 
-![Screenshot](events.jpg)
+![Screenshot](img/events.jpg)
