@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header class="container">
+      <h1>Fun with JavaScript</h1>
+    </header>
+    <section>
+      <aside>
+        <h2>JavaScript Prompt</h2>
+        <p>Dialog box which will ask prompt for a username and password.</p>
+        <p>
+          If you enter something in the prompt for username and password a
+          message will appear. If you leave it blank an error message will
+          appear
+        </p>
+
+        <button onclick="login()"><span>Login</span></button>
+
+        <p id="message"></p>
+        <p id="error"></p>
+      </aside>
+      <main>
+        <h2>List of objects that can be used in JavaScript</h2>
+        <p>There are four types of objects that can be used in JavaScript</p>
+        <ol>
+          <li>
+            Intrinsic objects
+          </li>
+          <li>Objects that are created</li>
+          <li>Host objects</li>
+          <li>ActiveX objects</li>
+        </ol>
+        <h3>Intrinsic objects</h3>
+        <p>
+          Array's and strings are examples of intrinsic objects in JavaScript.
+        </p>
+        <p> An example of an array:<pre>var myPets = ["Atlas", "Gizmo"];</pre> </p>
+        <h3>Objects that are created</h3>
+        <p>For example <pre>let petObj = new Object(); </br>myCat.name="Atlas";</pre></p>
+        <h2>JavaScript Events</h2>
+        <h3>HTML</h3>
+        <pre>&lt;button&gt;&lt;button&gt;</pre>
+        <h3>JavaScript</h3>
+        <pre> function getTime() {
+          document.getElementById("time").innerHTML = Date();
+      }</pre>
+      <button onClick="getTime()"><span>Try It</span></button>
+      <p id="time"></p>
+      </main>
+    </section>
+    <footer>Fun With JavaScript</footer>
+  </body>
+</html>
