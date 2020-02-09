@@ -9,23 +9,28 @@
     <header class="container">
       <h1>Fun with JavaScript</h1>
     </header>
-    <section>
+    <main>
       <aside>
-        <h2>JavaScript Prompt</h2>
+        <h2>1. JavaScript Prompt</h2>
         <p>Dialog box which will ask prompt for a username and password.</p>
         <p>
           If you enter something in the prompt for username and password a
           message will appear. If you leave it blank an error message will
           appear
         </p>
+        <p> 
+          The login is not secure and is meant for demo purposes only.
+        </p>
 
-        <button onclick="login()"><span>Login</span></button>
+        <button onclick="login()"><span>try it</span></button>
 
         <p id="message"></p>
         <p id="error"></p>
       </aside>
-      <main>
-        <h2>List of objects that can be used in JavaScript</h2>
+
+     <section>
+        <h2>2. List of objects that can be used in JavaScript</h2>
+        
         <p>There are four types of objects that can be used in JavaScript</p>
         <ol>
           <li>
@@ -35,24 +40,45 @@
           <li>Host objects</li>
           <li>ActiveX objects</li>
         </ol>
+
         <h3>Intrinsic objects</h3>
         <p>
-          Array's and strings are examples of intrinsic objects in JavaScript.
+          <code>array</code> and <code>string</code> are examples of intrinsic objects in JavaScript.
         </p>
-        <p> An example of an array:<pre>var myPets = ["Atlas", "Gizmo"];</pre> </p>
+        <p> An example of an intrinsic array object:</p>
+        <pre>var myPets = ["Atlas", "Gizmo"];</pre> 
+        <hr/>
+
         <h3>Objects that are created</h3>
-        <p>For example <pre>let petObj = new Object(); </br>myCat.name="Atlas";</pre></p>
-        <h2>JavaScript Events</h2>
+        <p>For example:</p>
+         <pre>const petObj = new Object(); </br>petObj.name="Atlas";<br/>document.write(petObj.name);<br/>// Output: Atlas</pre>
+         <hr/>
+
+         <h3>Host objects</h3>
+         <code>window</code> and <code>document</code> are two types of host objects.
+         <p>An example of the window host object is:</p>
+         <pre>const w = window.innerWidth<br/>|| document.documentElement.clientWidth</pre>
+         <button onClick="windowHostObj()"><span>Try It</span></button>
+         <p id="demoHostObj"></p>
+         <hr/>
+
+         <h3>ActiveX objects</h3>
+         <p>Active X is a Microsoft extension and if for IE only. ActiveX has security flaws so use with caution.</p>
+         <p>An example of ActiveX</p>
+         <pre>const ExcelApp = new ActiveXObject("Excel.Application");<br/>const ExcelSheet = new ActiveXObject("Excel.Sheet");</pre>
+        </section>
+
+        <section>
+        <h2>3. JavaScript Events</h2>
+        <hr/>
         <h3>HTML</h3>
-        <pre>&lt;button&gt;&lt;button&gt;</pre>
+        <pre>&lt;button onClick="getDateTime()"&gt; Try It &lt;/button&gt;</pre>
         <h3>JavaScript</h3>
-        <pre> function getTime() {
-          document.getElementById("time").innerHTML = Date();
-      }</pre>
-      <button onClick="getTime()"><span>Try It</span></button>
-      <p id="time"></p>
-      </main>
+        <pre>function getDateTime() { document.getElementById("dateTime").innerHTML = Date();}</pre>
+      <button onClick="getDateTime()"><span>Try It</span></button>
+      <p id="dateTime"></p> 
     </section>
+  </main>
     <footer>Fun With JavaScript</footer>
   </body>
 </html>

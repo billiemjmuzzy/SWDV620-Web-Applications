@@ -1,7 +1,6 @@
 function login() {
-    // let text;
-    let username = prompt("Username", "");
-    let password = prompt("Password", "");
+    const username = prompt("Username", "");
+    const password = prompt("Password", "");
 
     if (username && password != "") {
         document.getElementById("message").innerHTML = "Hello, " + username + "!";
@@ -11,6 +10,19 @@ function login() {
 
 }
 
-function getTime() {
-    document.getElementById("time").innerHTML = Date();
+function getDateTime() {
+    document.getElementById("dateTime").innerHTML = Date();
+}
+
+function windowHostObj() {
+    const w = window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth;
+
+    const h = window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+
+    const x = document.getElementById("demoHostObj");
+    x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
 }
