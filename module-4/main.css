@@ -46,6 +46,8 @@ p {
     padding: 5px;
 }
 
+/*code for word wrap taken from
+https://css-tricks.com/snippets/css/make-pre-text-wrap/*/
 pre {
     background-color: lightgray;
     border-left: 5px solid slateblue;
