@@ -25,6 +25,6 @@ If invalid response is entered an alert will appear. The form is validated by Ja
 
 ![Screenshot](img/for-switch.png)
 
-### 3. Created with a PHP script that uses switch
+### Created with a PHP script that uses switch
 
 ![Screenshot](img/switch.png)
