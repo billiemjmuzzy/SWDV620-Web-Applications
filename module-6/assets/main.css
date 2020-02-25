@@ -1,0 +1,248 @@
+/*****************************************
+   CSS Reset
+******************************************/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/*****************************************
+  Import Fonts
+******************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico&display=swap');
+
+/*****************************************
+     Global Styles
+  ******************************************/
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+h2,
+h3 {
+    margin-bottom: 10px;
+    color: navy;
+    font-family: 'Indie Flower';
+
+}
+
+h2 {
+    font-size: 1.5em;
+
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+hr {
+    border: 1px solid pink;
+}
+
+p {
+    padding: 5px;
+}
+
+/********************
+Form
+*********************/
+
+
+section form input {
+    outline: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid navy;
+    margin: 0 0 15px;
+    padding: 15px;
+}
+
+
+
+section form legend {
+    color: navy;
+    font-size: 2em;
+}
+
+div.multiply {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 1.25em;
+    text-align: center;
+    border: 2px dotted navy;
+}
+
+div.display img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 45%;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    background-color: navy;
+    color: white;
+
+}
+
+
+
+button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: navy;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+/*****************************************
+     Header
+  ******************************************/
+
+header {
+    text-align: center;
+    height: 125px;
+    position: relative;
+    background-color: navy;
+    margin-bottom: 20px;
+
+}
+
+
+
+header.container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    color: white;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+    font-family: 'Indie Flower';
+}
+
+
+
+/********************
+      Section
+  *********************/
+section {
+    float: right;
+    padding: 20px;
+    margin: 10px 5px 70px 5px;
+    width: 55%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+/********************
+      Side Bar
+  *********************/
+
+aside {
+    float: left;
+    padding: 20px;
+    margin: 10px 5px 0px 5px;
+    width: 40%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+
+
+/* Clear floats after the columns */
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout for screens 768px wide, stacks columns */
+@media screen and (max-width: 768px) {
+
+    main section,
+    main aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    main section {
+        margin: 10px 0 50px 5px;
+    }
+
+    div.desc {
+        font-size: .5em;
+    }
+
+}
+
+
+/*****************************************
+     Footer
+  ******************************************/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    padding-top: 1em;
+    text-align: center;
+    height: 3em;
+    font-family: 'Indie Flower';
+
+}
