@@ -7,7 +7,7 @@
 - a meta description tag
 - a meta robots tag to allow indexing, but not permit crawling of the site
 
-## Screenshots
+## Screenshot
 
 ### Page
 
