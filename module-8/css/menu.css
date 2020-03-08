@@ -1,0 +1,47 @@
+/*****************************************
+    Menu
+************************************/
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Navbar links */
+.navbar a {
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75em;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    color: #ea8a14;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 800px) {
+    .navbar {
+        position: relative;
+        background-color: purple;
+    }
+
+    .navbar a {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+
+    }
+}
